@@ -1,0 +1,41 @@
+JSX syntax is not supported in the browser
+So in order to use jsx syntax in the browser we use babel to convert that into
+react code which is understandable by the browser
+
+When rendering component , keys help keeing the data in sync which is why we should use objects rather than 
+arrays as props attributes
+
+
+We know that react only a single component so we add a div around our components to wrap it up in one component
+However , this can cluster up our html structure
+So we can replace that div with React.Fragment
+
+
+
+Destructuring an object for reaching in and grabbing by its key so you get the desired exact value rather than the entire
+props object
+
+
+
+How does useState work?
+useState returns two things
+First can be thought of as the state value being returned when the component is first being rendered
+
+
+
+useEffect
+useEffect is typically used to manage side effects which are not related to components rendering
+useEffect takes in two params , one is a function and the other is when the function is going to be called
+by passing an empty array as the second param , useEffect is going to be called once
+The second param can also be referred as the dependency as this decides when useEffect is going to be called
+Makes the component controlled
+
+useReducer
+Takes in two args , first is the function and the second is the initial state value
+
+useRef
+Think of useRef as a way to reach out to UI elements and get its value
+Makes the component uncontrolled
+
+Custom Hook
+Custom Hook is a function that starts with the keyword use
